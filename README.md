@@ -1,38 +1,69 @@
-# Welcome to Remix!
+<div align="center">
+  <a href="https://koyeb.com">
+    <img src="https://www.koyeb.com/static/images/icons/koyeb.svg" alt="Logo" width="80" height="80">
+  </a>
+  <h3 align="center">Koyeb Serverless Platform</h3>
+  <p align="center">
+    Deploy a RAG chatbot using Remix and Tailwind on Koyeb
+    <br />
+    <a href="https://koyeb.com">Learn more about Koyeb</a>
+    ·
+    <a href="https://koyeb.com/docs">Explore the documentation</a>
+    ·
+    <a href="https://koyeb.com/tutorials">Discover our tutorials</a>
+  </p>
+</div>
 
-- [Remix Docs](https://remix.run/docs)
 
-## Development
+## About Koyeb and the RAG chatbot with Remix and Tailwind example application
 
-From your terminal:
+Koyeb is a developer-friendly serverless platform to deploy apps globally. No ops, servers, or infrastructure management required.  This repository contains a RAG chatbot that you can deploy on the Koyeb serverless platform for testing.
 
-```sh
-npm run dev
-```
+This example application is designed to show how an application using Remix and Tailwind can be deployed on Koyeb.
 
-This starts your app in development mode, rebuilding assets on file changes.
+## Getting Started
 
-## Deployment
+Follow the steps below to deploy and run the Remix application with Tailwind on your Koyeb account.
 
-First, build your app for production:
+### Requirements
 
-```sh
-npm run build
-```
+To successfully deploy and run this application, you need:
 
-Then run the app in production mode:
+* A Koyeb account: If you don't already have an account, you can sign-up for free [here](https://app.koyeb.com/auth/signup)
+* An [OpenAI](https://platform.openai.com) API key.
+* A [Replicate](https://replicate.com) API key..
 
-```sh
-npm start
-```
+### Deploy using the Koyeb button
 
-Now you'll need to pick a host to deploy it to.
+The fastest way to deploy the Remix and Tailwind application is to click the **Deploy to Koyeb** button below.
 
-### DIY
+[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?name=chatbot-on-koyeb&type=git&repository=koyeb%2Fexample-rag-chatbot-postgres&branch=main&env%5BPOSTGRES_URL%5D=CHANGE_ME&env%5BREPLICATE_API_TOKEN%5D=CHANGE_ME&env%5BOPENAI_API_KEY%5D=CHANGE_ME)
 
-If you're familiar with deploying node applications, the built-in Remix app server is production-ready.
+Clicking on this button brings you to the Koyeb App creation page with everything pre-set to launch this application.  Modify the environment variables to point to your own values before launching the application.
 
-Make sure to deploy the output of `remix build`
+_To modify this application example, you will need to fork this repository. Checkout the [fork and deploy](#fork-and-deploy-to-koyeb) instructions._
 
-- `build/`
-- `public/build/`
+### Fork and deploy to Koyeb
+
+If you want to customize and enhance this application, you need to fork this repository.
+
+If you used the **Deploy to Koyeb** button, you can simply link your service to your forked repository to be able to push changes.
+Alternatively, you can manually create the application as described below.
+
+On the [Koyeb Control Panel](//app.koyeb.com/apps), click the **Create App** button to go to the App creation page.
+
+1. Select `GitHub` as the deployment method to use.
+2. In the repositories list, select the repository you just forked.
+3. Name your app, for example `rag-chatbot`.
+4. Click **Advanced** and then **Add Variable** to add the `POSTGRES_URL`, `OPENAI_API_KEY`, and `REPLICATE_API_TOKEN` variables with your values.  For the `POSTGRES_URL` value, be sure to append `?sslmode=require` to the connection string to ensure that the application connects with the correct settings.
+5. Give your Service a name. For example, `rag-chatbot`
+
+You land on the deployment page where you can follow the build of your application. Once the build is completed, your application is being deployed and you will be able to access it via `<YOUR_APP_NAME>-<YOUR_ORG_NAME>.koyeb.app`.
+
+## Contributing
+
+If you have any questions, ideas or suggestions regarding this application sample, feel free to open an [issue](https://github.com/koyeb/example-rag-chatbot-postgres/issues) or fork this repository and open a [pull request](https://github.com/koyeb/example-rag-chatbot-postgres/pulls).
+
+## Contact
+
+[Koyeb](https://www.koyeb.com) - [@gokoyeb](https://twitter.com/gokoyeb) - [Slack](http://slack.koyeb.com/)
