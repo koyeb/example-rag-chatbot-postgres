@@ -31,7 +31,7 @@ To successfully deploy and run this application, you need:
 
 * A Koyeb account: If you don't already have an account, you can sign-up for free [here](https://app.koyeb.com/auth/signup)
 * An [OpenAI](https://platform.openai.com) API key.
-* A [Replicate](https://replicate.com) API key..
+* A [Replicate](https://replicate.com) API key.
 
 ### Deploy using the Koyeb button
 
