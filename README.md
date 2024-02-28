@@ -29,7 +29,7 @@ Follow the steps below to deploy and run the Remix application with Tailwind on 
 
 To successfully deploy and run this application, you need:
 
-* A Koyeb account: If you don't already have an account, you can sign-up for free [here](https://app.koyeb.com/auth/signup)
+* A Koyeb account: If you don't already have an account, you can sign-up for free [here](https://app.koyeb.com/auth/signup).
 * An [OpenAI](https://platform.openai.com) API key.
 * A [Replicate](https://replicate.com) API key.
 
