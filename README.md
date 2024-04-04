@@ -50,13 +50,12 @@ If you want to customize and enhance this application, you need to fork this rep
 If you used the **Deploy to Koyeb** button, you can simply link your service to your forked repository to be able to push changes.
 Alternatively, you can manually create the application as described below.
 
-On the [Koyeb Control Panel](//app.koyeb.com/apps), click the **Create App** button to go to the App creation page.
+On the [Koyeb Control Panel](//app.koyeb.com/apps), on the **Overview** tab, click the **Create Web Service** button to begin.
 
-1. Select `GitHub` as the deployment method to use.
+1. Select **GitHub** as the deployment method.
 2. In the repositories list, select the repository you just forked.
-3. Name your app, for example `rag-chatbot`.
-4. Click **Advanced** and then **Add Variable** to add the `POSTGRES_URL`, `OPENAI_API_KEY`, and `REPLICATE_API_TOKEN` variables with your values.  For the `POSTGRES_URL` value, be sure to append `?sslmode=require` to the connection string to ensure that the application connects with the correct settings.
-5. Give your Service a name. For example, `rag-chatbot`.
+3. In the **Environment variables** section, click **Add variable** to add the `POSTGRES_URL`, `OPENAI_API_KEY`, and `REPLICATE_API_TOKEN` variables with your values.  For the `POSTGRES_URL` value, be sure to append `?sslmode=require` to the connection string to ensure that the application connects with the correct settings.
+4. Choose a name for your App and Service, for example, `rag-chatbot`, and click **Deploy**.
 
 You land on the deployment page where you can follow the build of your application. Once the build is completed, your application is being deployed and you will be able to access it via `<YOUR_APP_NAME>-<YOUR_ORG_NAME>.koyeb.app`.
 
